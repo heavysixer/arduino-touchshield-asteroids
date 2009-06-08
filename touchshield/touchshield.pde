@@ -48,10 +48,6 @@ public:
 	};
 private:
 	float convert_to_radians(float deg){
-		// these is terrible, can't handle values greater than 720
-		if(deg > 360.0) deg = deg - 360.0;
-		if(deg < 0.0) deg = deg + 360.0;
-		
 		return 3.1415 / 180.0 * deg;
 	};
 	float drawing_constraints(float coord){
